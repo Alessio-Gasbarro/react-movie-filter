@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+header {
+  padding: 30px 0;
+  background-color: lightpink;
+  color: white;
+  display: flex;
+  font-size: 30px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+input[type=text],
+select {
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* SEARCH BOX */
+.search-box {
+  width: 100%;
+  padding: 20px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-box input {
+  width: 70%;
+}
+
+.search-box select {
+  width: 30%;
+}
+
+/* MOVIE LIST */
+
+.movie-container {
+  width: 100%;
+}
+
+.movie-container ul {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Individual cards */
+.card {
+  transition: all 0.6s ease;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.card-image {
+  width: 150px;
+  height: 250px;
+  margin-bottom: 10px;
+}
+
+.card-image img {
+  width: 100%;
+}
+
+.card-description {
+  width: 100%;
+}
+
+.card-title {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.card-genre {
+  margin-bottom: 10px;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.05) rotate(-10deg);
+  box-shadow: 0 0 20px;
+  background-color: lightpink;
+  color: white;
+}
+
+/* NEW ENTRY */
+form {
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+form h2 {
+  width: 100%;
+  text-align: center;
+  color: palevioletred;
+  margin-bottom: 20px;
+}
+
+form .input-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+form input {
+  width: 70%;
+}
+
+form select {
+  width: 30%;
+}
+
+form button {
+  width: 30%;
+  padding: 10px;
+  background-color: lightpink;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: palevioletred;
+  opacity: 0.8;
+}
